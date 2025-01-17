@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background: url("bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: pink;
+  text-align: center;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
+button {
+  padding: 10px;
+  margin: 10px 0;
+  width: calc(100% - 20px);
+  border-radius: 1rem;
+  border: none;
+  background-color: white;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  width: calc(100% - 20px);
+  border-radius: 0.3rem;
+  border: none;
+  background-color: white;
+}
+
+button:hover {
+  background-color: rgb(214, 214, 214);
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 20px;
+}
