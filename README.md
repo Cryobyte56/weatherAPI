@@ -1,2 +1,1 @@
-# weatherAPI
-Created using HTML/CSS/JavaScript and Weather API from weatherapi.com. Just search your city and know its information. Made the UI user-friendly. Feel free to contribute!
+Just replace the API Key on script.js file with your API Key to make it work.
