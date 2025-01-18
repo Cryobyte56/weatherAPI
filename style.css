@@ -1,69 +1,89 @@
 body {
   font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 20px;
   background: url("bg.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
-}
-
-.main {
-  max-width: 400px;
-  margin: 0 auto;
-  margin-top: 1rem;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.card-container {
+  background-size: cover;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: pink;
-  text-align: center;
-  width: 12rem;
-  height: 12rem;
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-  padding-top: 0.5rem;
+  background: rgba(113, 113, 113, 0.2); 
+  border-radius: 16px;
+  width: 300px;
+  padding: 20px;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(10px); 
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-button {
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  flex: 1;
   padding: 10px;
-  margin: 10px 0;
-  width: calc(100% - 20px);
   border-radius: 1rem;
   border: none;
-  background-color: white;
+  outline: none;
+  font-size: 16px;
+  margin-right: 1rem;
 }
 
-input {
-  padding: 10px;
-  margin: 10px 0;
-  width: calc(100% - 20px);
-  border-radius: 0.3rem;
+.search-bar button {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
   border: none;
-  background-color: white;
-}
-
-button:hover {
-  background-color: rgb(214, 214, 214);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  outline: none;
 }
 
-#result {
+.search-bar button img {
+  width: 20px;
+  height: 20px;
+}
+
+.temperature {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.temperature h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.location {
+  text-align: center;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
   margin-top: 20px;
 }
+
+.details div {
+  text-align: center;
+}
+
+.details div p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+

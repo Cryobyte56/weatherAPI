@@ -1,6 +1,6 @@
 document.getElementById("getWeather").addEventListener("click", function () {
   const city = document.getElementById("city").value;
-  const apiKey = "07ea4a24458a49f3acc93158251701";
+  const apiKey = "";
   const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=yes`;
 
   fetch(url)
@@ -32,7 +32,7 @@ document.getElementById("getWeather").addEventListener("click", function () {
       document.getElementById("location").textContent = location;
       document.getElementById(
         "latest"
-      ).textContent = `Updated: ${formattedDateTime}`;
+      ).textContent = `${formattedDateTime}`;
       document.getElementById("temperature").textContent = `${temp}°C`;
       document.getElementById("humidity").textContent = `${humidity}%`;
       document.getElementById("windspeed").textContent = `${windSpeed} km/h`;
